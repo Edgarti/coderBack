@@ -1,0 +1,30 @@
+ead
+  meta(charset='utf-8')
+  title Title2
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css')
+  a(href='/productos') productos
+ 
+  body
+      .modal-dialog
+        .modal-content
+          // Modal Header
+          .modal-header
+            button.close(type="button", data-dismiss="modal")
+              span(aria-hidden="true") ×
+              span.sr-only Close
+            h4#myModalLabel.modal-title
+              | Productos
+          // Modal Body
+          .modal-body
+            form(role='form' method='post' action='/productos')
+              div.form-group
+                label(for='title') Title:
+                input#title.form-control(type='text', placeholder='title' name='tible')
+              div.form-group
+                label(for='price') Price:
+                input#price.form-control(type='text', placeholder='' name='price')
+              div.form-group
+                label(for='imagen') Imagen:
+                input#imagen.form-control(type='text', placeholder='' name='imagen')  
+              button.btn.btn-primary(type="submit", name="asdf") Submit
+

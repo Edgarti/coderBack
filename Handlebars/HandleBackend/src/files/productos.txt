@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "ere",
+    "price": "23",
+    "imagen": "trtr"
+  },
+  {
+    "id": 2,
+    "title": "ere",
+    "price": "12",
+    "imagen": ""
+  },
+  {
+    "id": 3,
+    "title": "produto",
+    "price": "67",
+    "imagen": ""
+  },
+  {
+    "id": 4,
+    "title": "produto",
+    "price": "67",
+    "imagen": ""
+  },
+  {
+    "id": 5,
+    "title": "produto",
+    "price": "1",
+    "imagen": ""
+  }
+]

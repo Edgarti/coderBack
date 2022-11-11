@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "tible": "articulo1",
+    "price": "12",
+    "imagen": "uno",
+    "asdf": ""
+  },
+  {
+    "id": 2,
+    "tible": "producto1",
+    "price": "18",
+    "imagen": "asdfadsf",
+    "asdf": ""
+  }
+]
