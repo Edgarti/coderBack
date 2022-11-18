@@ -1,0 +1,33 @@
+
+<div class="container" >
+    <h2>Home -Productos</h2>
+    <form  id="productosForm">
+        <div class="mb-3">
+         <label class="form-label">Title</label>
+         <input type="text" id="title" class="form-control" name="title" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+         <label class="form-label">Price</label>
+         <input type="number" id="price" class="form-control" name="price" aria-describedby="emailHelp">
+        </div>
+         <div class="mb-3">
+         <label class="form-label">Imagen</label>
+         <input type="text" id="imagen" class="form-control" name="imagen" aria-describedby="emailHelp">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<div>
+    <div margin-left="50px" >
+     <h2 >     Home -Listado todos los Productos</h2>
+    </div>
+</div>
+
+<div id="itemForm" margin-left="50px" >
+</div>
+
+{{> importScripts}}
+<script src="/socket.io/socket.io.js"></script>
+<script src="home.js"></script>

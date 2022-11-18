@@ -1,0 +1,35 @@
+<div class="container" >
+    <h2>List -Productos</h2>
+	<div class="card-group">
+		{{#each productos}}	
+			<div class="card">
+				<img src={{this.imagen}} class="card-img-top" alt="..." style="Width: 200px; height: 120px">
+				{{!-- <div class="card-body"> --}}
+				<h5 class="card-title">Title :{{this.title}}</h5>
+				<p class="card-text">Price : USD {{this.price}}</p>
+				<p class="card-text"><small class="text-muted">Stock :10 Unds.</small></p>
+			</div>
+			{{/each}}
+	</div>
+</div>
+
+
+
+
+
+{{!-- <div>
+    <h2>Pagina de productos</h2>
+
+    <TABLE BORDER>
+	<TR>
+		<TH>Title</TH> <TH>Precio</TH> <TH>Imagen</TH>
+	</TR>
+    {{#each productos}}
+	<TR>
+		<TD>{{this.title}}</TD>
+        <TD>{{this.price}}</TD> 
+        <TD>{{this.imagen}}</TD>
+	</TR>
+	{{/each}}
+</TABLE>
+         --}}
