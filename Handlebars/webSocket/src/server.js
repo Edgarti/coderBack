@@ -28,25 +28,33 @@ app.set("view engine", "handlebars");
 
 //configurar socket.io
 const io = new Server(server);
+
+const chat = [{autor: "pedro", text :"Hola men "},
+{autor: "pablo", text :"Bien pedro como estas..?? "},
+{autor: "Nancy", text :"Chicos como estan..? "}
+]
+
 io.on("connection",async(socket)=>{
         console.log("nuevo cliente conectado");
         //Cuando se conecte recibe todos los productos 
         socket.emit("listProdutosFront",await productsService.getAll());
-
+        socket.emit("msgChat",chat)
         socket.on("newProductos",async(data)=>{
           await  productsService.save(data);
           const listActProdutos = await productsService.getAll();
           io.sockets.emit("listProdutosFront",await productsService.getAll())
+          
         })
+
         //enviar los mensajes al cliente
-        // socket.emit("messagesChat", messages);
+        socket.emit("mesgChat", chat);
     
         // //recibimos el mensaje
-        // socket.on("newMsg", (data)=>{
-        //     messages.push(data);
-        //     //enviamos los mensajes a todos los sockets que esten conectados.
-        //     io.sockets.emit("messagesChat", messages)
-        // })
+        socket.on("newMsg", (data)=>{
+           chat.push(data);
+            //enviamos los mensajes a todos los sockets que esten conectados.
+            io.sockets.emit("messagesChat",chat)
+        })
     });
 
 //rutas de las vistas

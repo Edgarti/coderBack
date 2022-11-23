@@ -1,19 +1,19 @@
 console.log("js funcionando");
 
+//inicializar socket al lado del cliente 
 const socketClient = io();
 
-const chatContainer = document.getElementById("chatContainer");
 
-socketClient.on("messagesChat",(data)=>{
+socketClient.on("msgChat",(data)=>{
     console.log(data)
     let messages="";
     data.forEach(element => {
-        messages += `<p>Autor: ${element.author} - mensage: ${element.text}</p>`
+        messages += `<p>Nombre: ${element.autor} - MENSAJE: ${element.text}</p>`
     });
     chatContainer.innerHTML = messages;
 })
 
-//capturar el nombre del usuario
+// //capturar el nombre del usuario
 let user = "";
 Swal.fire({
     title:"Bienvenido",
@@ -26,7 +26,7 @@ Swal.fire({
     document.getElementById("username").innerHTML = `Bienvenido ${user}`;
 })
 
-//enviar un mensaje a nuestro servidor
+// //enviar un mensaje a nuestro servidor
 const chatForm = document.getElementById("chatForm");
 
 chatForm.addEventListener("submit",(event)=>{
@@ -35,8 +35,9 @@ chatForm.addEventListener("submit",(event)=>{
     console.log("formulario enviado")
     const message = {
         author:user,
-        text:document.getElementById("messageChat").value
+        text:document.getElementById("addMsg").value
     }
+    console.log(message)
     //envia nuevo mensaje
     socketClient.emit("newMsg", message)
 })
