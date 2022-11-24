@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": "ee",
+    "nombre": "ee",
+    "descripcion": "23",
+    "codigo": "23",
+    "foto": "23",
+    "precio": 2,
+    "stock": 10,
+    "id": 1
+  },
+  {
+    "timestamp": "ee",
+    "nombre": "ee",
+    "descripcion": "23",
+    "codigo": "23",
+    "foto": "23",
+    "precio": 2,
+    "stock": 10,
+    "id": 2
+  },
+  {
+    "timestamp": "ee",
+    "nombre": "ee",
+    "descripcion": "23",
+    "codigo": "23",
+    "foto": "23",
+    "precio": 2,
+    "stock": 10,
+    "id": 3
+  }
+]
