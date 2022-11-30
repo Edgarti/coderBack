@@ -1,0 +1,16 @@
+intalar ..
+express
+express-handlebars
+socket.io
+npm i knex mysql sqlite3
+
+script
+""start" : "src/server.js"
+
+C:\xampp\mysql\bin>mysql -u root
+MariaDB [(none)]> show databases;
+MariaDB [(none)]> create database coderDB;
+ajustes  script package.json
+use coderDB; seleccionar base de datos
+show tables  ver tablas
+describe porductos; estructura de la tabla
