@@ -1,0 +1,24 @@
+coleccion : tablas
+documentos : Registros
+propiedades : campos 
+
+C:\Program Files\MongoDB
+C:\Program Files\MongoDB\Server\5.0\bin
+buscar en Windows : editar varriables de entorno
+boton : variables entorno
+agregar  en path ... C:\Program Files\MongoDB\Server\5.0\bin
+abrir cmd y escribir mongo
+
+use sistema ... crea Db y queda seleccionada
+
+db .. en que Db estamos
+
+show databases .. todas las Db
+show collections .. tablas
+db.productos.insertOne({title: "producto1", prince : 27, imagen :""})
+db.productos.find() .. listar todos los registro
+
+db.productos.insertMany([
+    {title: "producto2", prince : 31, imagen :""},
+    {title: "producto3", prince : 57, imagen :""}
+    ])

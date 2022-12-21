@@ -1,0 +1,13 @@
+<div class="mx-5 my-2">
+    <h2 class="text-success">Home</h2>
+    <p id="userEmail"></p>
+    {{> productsForm}}
+    <div class="my-4" id="productsContainer"></div>
+    <hr>
+    <h2 class="text-success">Chat</h2>
+    <input class="form-control my-2" type="text" id="chatMsg" placeholder="Ingresa un mensaje"/>
+    <button class="btn btn-primary mb-2" id="sendMsg">Enviar</button>
+    <div id="chatContainer" class="my-2"></div>
+</div>
+{{> importScripts}}
+<script src="index.js"></script>
