@@ -1,0 +1,16 @@
+<div>
+    <h2>Pagina de productos</h2>
+
+    <TABLE BORDER>
+	<TR>
+		<TH>ID</TH> <TH>Nombre</TH> <TH>Precio</TH> <TH>Imagen</TH>
+	</TR>
+    {{#each listProductos}}
+	<TR>
+		<TD>{{this.id}}</TD>
+        <TD>{{this.nombre}}</TD> 
+        <TD>{{this.price}}</TD>
+		 <TD>{{this.url}}</TD>
+	</TR>
+	{{/each}}
+</TABLE>
