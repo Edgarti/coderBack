@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "author": {
+      "email": "kitservi@hotmail.com",
+      "name": "Edgar",
+      "lastname": "Pirachican"
+    },
+    "text": "hola men",
+    "timestamp": "10/1/2023, 19:32:24"
+  },
+  {
+    "id": 2,
+    "author": {
+      "email": "kitservi@hotmail.com",
+      "name": "Edgar",
+      "lastname": "Pirachican"
+    },
+    "text": "me llamo edgar, quien esta por ahiii",
+    "timestamp": "10/1/2023, 19:33:10"
+  }
+]
